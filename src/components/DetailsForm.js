@@ -1,29 +1,25 @@
 const DetailsForm = () => {
     return (
-        <form action="" className="form">
-            <div>
-                <input type="text" placeholder="First Name" required />
-            </div>
-            <div>
-                <input type="text" placeholder="Last Name" required />
-            </div>
-            <div>
-                <input type="email" placeholder="Email Address" required />
-            </div>
-            <div>
-                <input type="text" placeholder="Password" required />
-            </div>
-            <div>
-                <input
-                    type="submit"
-                    className="claim"
-                    value="Claim your free trial"
-                />
-            </div>
-            <div className="accept">
+        <form className="form">
+            <input
+                type="text"
+                placeholder="First Name"
+                id="first-name"
+                required
+            />
+            <input type="text" placeholder="Last Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <input
+                type="submit"
+                className="claim"
+                value="Claim your free trial"
+            />
+            <br />
+            <p className="agree">
                 By clicking the button, you are agreeing to our
-                <span>Terms and Services</span>
-            </div>
+                <span> Terms and Services</span>
+            </p>
         </form>
     );
 };
