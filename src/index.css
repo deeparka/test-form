@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+
+* {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: #ff7a7a;
+    font-family: "Spartan", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.home {
+    display: flex;
+}
+
+.home .description {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 230px;
+    padding-left: 120px;
+    text-align: left;
+}
+
+.home .description .headline {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.home .offer-details-form {
+    margin-right: 200px;
+    width: 100%;
+}
+
+.home .offer-details-form .offer,
+.home .offer-details-form .offer span {
+    background-color: #6055a5;
+    color: #ffffff;
+}
+
+.home .offer-details-form .offer {
+    margin: 20px;
+    border: 20px #6055a5;
+    padding: 15px 22px;
+    border-radius: 8px;
+}
+
+.home .offer-details-form .offer span {
+    font-weight: bolder;
 }
