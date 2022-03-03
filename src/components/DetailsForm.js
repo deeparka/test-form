@@ -38,9 +38,7 @@ const DetailsForm = () => {
                 onChange={(e) => setFirstName(e.target.value)}
                 required
             />
-            {/* {firstName === "" && (
-                <p className="error">First Name cannot be empty</p>
-            )} */}
+
             <input
                 type="text"
                 placeholder="Last Name"
@@ -48,9 +46,7 @@ const DetailsForm = () => {
                 onChange={(e) => setLastName(e.target.value)}
                 required
             />
-            {/* {lastName === "" && (
-                <p className="error">Last Name cannot be empty</p>
-            )} */}
+
             <input
                 type="email"
                 placeholder="Email Address"
@@ -58,9 +54,7 @@ const DetailsForm = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
             />
-            {/* {email === "" && (
-                <p className="error">Looks like this is not an email</p>
-            )} */}
+
             <input
                 type="password"
                 placeholder="Password"
@@ -68,11 +62,10 @@ const DetailsForm = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
             />
-            {/* {password === "" && (
-                <p className="error">Password cannot be empty</p>
-            )} */}
+
             {!isPending && <button>CLAIM YOUR FREE TRIAL</button>}
             {isPending && <button disabled>Adding Data</button>}
+
             <p className="agree">
                 By clicking the button, you are agreeing to our
                 <span> Terms and Services</span>
